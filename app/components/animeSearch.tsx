@@ -22,7 +22,7 @@ const AnimeSearchBar = ({
   const [searchQuery, setSearchQuery] = useState(initialQuery);
 
   // Debounce the search query to prevent frequent updates
-  const debouncedSearchQuery = useDebounce(searchQuery, 250);
+  const debouncedSearchQuery = useDebounce(searchQuery, 500);
 
   // Update the URL when the debounced search query changes
   useEffect(() => {
